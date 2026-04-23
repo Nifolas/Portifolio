@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicolas — Desenvolvedor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">Portfólio</a>
+    <ul class="nav-links">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#tech">Stack</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#social">Links</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about" class="mobile-link">Sobre</a>
+    <a href="#tech" class="mobile-link">Stack</a>
+    <a href="#projects" class="mobile-link">Projetos</a>
+    <a href="#social" class="mobile-link">Links</a>
+    <a href="#contact" class="mobile-link">Contato</a>
+  </div>
+
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-tag"><span class="dot"></span>Disponível para oportunidades</p>
+        <h1 class="hero-name">Nicolas</h1>
+        <p class="hero-role">Desenvolvedor em formação — ADS · SENAI</p>
+        <p class="hero-desc">
+          Técnico em TI pela ETEC e estudante de Análise e Desenvolvimento de Sistemas. Apaixonado por construir interfaces funcionais, aprender boas práticas e transformar ideias em código real.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            Ver projetos
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="cv-nicolas.pdf" class="btn btn-outline" id="btn-download-cv" download>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            Baixar CV
+          </a>
+        </div>
+      </div>
+      <div class="hero-avatar">
+        <span class="hero-initials">N.</span>
+        <span class="hero-avatar-label">dev. front-end</span>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <p class="section-label reveal">Sobre mim</p>
+      <div class="about-grid">
+        <div class="reveal">
+          <h2 class="about-heading">
+            Construindo a base<br/>para uma <em>carreira sólida</em>
+          </h2>
+          <p class="about-text">
+            Minha trajetória começou na ETEC, onde me formei Técnico em TI e desenvolvi uma base estruturada em redes, hardware e programação. Hoje continuo evoluindo no curso de Análise e Desenvolvimento de Sistemas no SENAI — sempre com foco em desenvolvimento web.
+          </p>
+          <p class="about-text">
+            Gosto de resolver problemas com código limpo e interfaces bem pensadas. Cada projeto que construo é uma oportunidade de aplicar o que aprendo e descobrir o que ainda preciso aprender. Estou em busca da minha primeira oportunidade profissional para crescer dentro de uma equipe real.
+          </p>
+          <div class="about-badges">
+            <span class="badge">Pensamento analítico</span>
+            <span class="badge">Curioso & autodidata</span>
+            <span class="badge">Trabalho em equipe</span>
+            <span class="badge">Atenção a detalhes</span>
+          </div>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Anos estudando dev web</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Projetos no portfólio</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">4</div>
+            <div class="stat-label">Tecnologias dominadas</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Vontade de aprender</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tech">
+    <div class="container">
+      <p class="section-label reveal">Stack atual</p>
+      <h2 class="tech-heading reveal">Ferramentas &<br/>tecnologias</h2>
+      <div class="tech-grid">
+
+        <div class="tech-card reveal">
+          <span class="tech-icon">🏗️</span>
+          <div class="tech-name">HTML5</div>
+          <div class="tech-desc">Estruturação semântica de páginas, acessibilidade e boas práticas de marcação.</div>
+          <div class="tech-level"><div class="tech-level-fill" data-width="82%" style="width:0"></div></div>
+        </div>
+
+        <div class="tech-card reveal">
+          <span class="tech-icon">🎨</span>
+          <div class="tech-name">CSS3</div>
+          <div class="tech-desc">Layouts responsivos com Flexbox e Grid, animações e design cross-device.</div>
+          <div class="tech-level"><div class="tech-level-fill" data-width="75%" style="width:0"></div></div>
+        </div>
+
+        <div class="tech-card reveal">
+          <span class="tech-icon">⚡</span>
+          <div class="tech-name">JavaScript</div>
+          <div class="tech-desc">Lógica de programação, manipulação do DOM e interatividade nas aplicações.</div>
+          <div class="tech-level"><div class="tech-level-fill" data-width="68%" style="width:0"></div></div>
+        </div>
+
+        <div class="tech-card reveal">
+          <span class="tech-icon">🔀</span>
+          <div class="tech-name">Git & GitHub</div>
+          <div class="tech-desc">Controle de versão, gerenciamento de repositórios e colaboração em projetos.</div>
+          <div class="tech-level"><div class="tech-level-fill" data-width="70%" style="width:0"></div></div>
+        </div>
+
+        <div class="tech-card reveal">
+          <span class="tech-icon">🐘</span>
+          <div class="tech-name">PHP</div>
+          <div class="tech-desc">Desenvolvimento back-end com foco em lógica de servidor e integração com banco de dados.</div>
+          <div class="tech-level"><div class="tech-level-fill" data-width="60%" style="width:0"></div></div>
+        </div>
+
+        <div class="tech-card reveal">
+          <span class="tech-icon">🐍</span>
+          <div class="tech-name">Python</div>
+          <div class="tech-desc">Scripts, automações e fundamentos de programação aplicados em diferentes contextos.</div>
+          <div class="tech-level"><div class="tech-level-fill" data-width="65%" style="width:0"></div></div>
+        </div>
+
+        <div class="tech-card reveal">
+          <span class="tech-icon">🗄️</span>
+          <div class="tech-name">SQL</div>
+          <div class="tech-desc">Manipulação de dados, consultas e estruturação de bancos relacionais.</div>
+          <div class="tech-level"><div class="tech-level-fill" data-width="70%" style="width:0"></div></div>
+        </div>
+
+        <div class="tech-card reveal">
+          <span class="tech-icon">🐬</span>
+          <div class="tech-name">MySQL</div>
+          <div class="tech-desc">Gerenciamento de banco de dados relacional com foco em aplicações web.</div>
+          <div class="tech-level"><div class="tech-level-fill" data-width="70%" style="width:0"></div></div>
+        </div>
+
+        <div class="tech-card reveal">
+          <span class="tech-icon">☁️</span>
+          <div class="tech-name">AWS</div>
+          <div class="tech-desc">Conceitos básicos de cloud computing e serviços para hospedagem de aplicações.</div>
+          <div class="tech-level"><div class="tech-level-fill" data-width="50%" style="width:0"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <p class="section-label reveal">Trabalhos</p>
+      <div class="projects-header">
+        <h2 class="projects-heading reveal">Projetos<br/>selecionados</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-thumb project-thumb-mario">
+            <span class="project-thumb-emoji">🍄</span>
+          </div>
+          <div class="project-body">
+            <div class="project-type">Jogo / Lógica</div>
+            <h3 class="project-title">Jogo estilo Mario</h3>
+            <p class="project-desc">
+              Jogo de plataforma inspirado no universo Mario, desenvolvido com JavaScript puro para praticar lógica de programação, física de colisão e interação do usuário.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">HTML5 Canvas</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">CSS3</span>
+            </div>
+            <div class="project-links">
+              <a href="https://nifolas.github.io/Jogo-Mario/" target="_blank" rel="noopener" class="project-link">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Demo
+              </a>
+              <a href="https://github.com/Nifolas/Jogo-Mario" target="_blank" rel="noopener" class="project-link">
+                <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-thumb project-thumb-restaurant">
+            <span class="project-thumb-emoji">🍽️</span>
+          </div>
+          <div class="project-body">
+            <div class="project-type">Layout / Responsivo</div>
+            <h3 class="project-title">Forno-Imperiale</h3>
+            <p class="project-desc">
+              Landing page completa para um restaurante com menu interativo, design responsivo e seções de cardápio, reservas e localização.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Responsivo</span>
+            </div>
+            <div class="project-links">
+              <a href="https://nifolas.github.io/Forno-Imperiale/" class="project-link">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Demo
+              </a>
+              <a href="#" class="project-link">
+                <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-thumb project-thumb-eco">
+            <span class="project-thumb-emoji">♻️</span>
+          </div>
+          <div class="project-body">
+            <div class="project-type">Aplicação Web</div>
+            <h3 class="project-title">EcoRoute</h3>
+            <p class="project-desc">
+              Plataforma para localização de pontos de coleta seletiva de resíduos. Conecta cidadãos a ecopontos próximos promovendo a sustentabilidade.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Mapas</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Demo
+              </a>
+              <a href="#" class="project-link">
+                <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="social">
+    <div class="container">
+      <p class="section-label reveal">Redes & links</p>
+      <h2 class="social-heading reveal">Onde me encontrar</h2>
+      <div class="social-grid">
+
+        <a href="https://www.linkedin.com/in/nicolas-marcelino-a8373b391" target="_blank" rel="noopener" class="social-card reveal">
+          <div class="social-icon">💼</div>
+          <div>
+            <div class="social-name">LinkedIn</div>
+            <div class="social-handle">Nicolas Marcelino</div>
+          </div>
+        </a>
+
+        <a href="https://nifolas.github.io/Jogo-Mario/" target="_blank" rel="noopener" class="social-card reveal">
+          <div class="social-icon">⌨️</div>
+          <div>
+            <div class="social-name">GitHub</div>
+            <div class="social-handle">github/Nifolas</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-inner reveal">
+        <p class="section-label" style="justify-content:center">Contato</p>
+        <h2 class="contact-heading">Vamos trabalhar<br/><em>juntos?</em></h2>
+        <p class="contact-text">
+          Estou em busca da minha primeira oportunidade na área de tecnologia. Se você tem uma vaga, um projeto ou só quer trocar ideia sobre dev, manda mensagem!
+        </p>
+        <a href="mailto:nicolas@email.com" class="contact-email">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          nicolas@email.com
+        </a>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+          <a href="https://www.linkedin.com/in/nicolas-marcelino-a8373b391" target="_blank" class="btn btn-primary">
+            LinkedIn
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+          <a href="cv-nicolas.pdf" class="btn btn-outline" id="btn-download-cv-2" download>
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            Baixar CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="footer-logo">Nic<span>.</span></span>
+    <span>Desenvolvido por Nicolas · 2026</span>
+    <span>HTML · CSS · JS</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
